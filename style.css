@@ -1,0 +1,343 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.container {
+  background-image: url("/landing/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  min-height: 140vh;
+  margin: 0;
+  padding: 0;
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgba(91, 89, 89, 0.4);
+  border-bottom: 1px solid gray;
+}
+
+.first,
+.last-section {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 80px;
+  margin: 0 20px;
+}
+
+.first li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.first li a:hover {
+  color: wheat;
+  text-decoration: underline;
+}
+
+.search-bar {
+  padding: 8px 15px;
+  border-radius: 10px;
+  border: 1px solid rgb(223, 220, 220);
+  color: white;
+  font-size: 14px;
+  background-color:  rgba(204, 196, 196, 0.519);
+  outline: none;
+}
+
+.last-section {
+  padding-top: 10px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+main {
+  color: white;
+  font-size: 25px;
+  margin: 100px 100px 0 100px;
+  padding-top: 40px;
+}
+
+main p {
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: rgba(196, 196, 244, 0.763);
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font-size: 15px;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  margin: 50px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: wheat;
+  color: brown;
+  text-decoration: underline;
+}
+
+section{
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.734) 0%, lightgrey 100%);
+  margin: 0;
+  padding: 0;
+}
+
+.trending, .collection, .contact{
+  margin: 30px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  justify-content: space-between;
+}
+
+.images img{
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.click{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 120px;
+  margin-right: 150px;
+  margin-top: 20px;
+}
+
+.click button {
+  padding: 15px;
+  font-size: 14px;
+  background-color: rgba(196, 196, 244, 0.763);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.click button:hover{
+  background-color: wheat;
+  color: brown;
+  text-decoration: underline;
+}
+
+.tshirt-header {
+  background-color: rgb(22, 14, 0);
+}
+
+.tshirt-header h2 {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+.trousers {
+  background-color: rgb(36, 24, 1);
+}
+
+.trousers h2 {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+.images p {
+  color: white;
+}
+
+.item  img {
+  width: 200px;
+  height: 250px;
+  border-radius: 8px;
+  display: block;
+}
+
+.jackets {
+  background-color: rgb(33, 21, 1);
+}
+
+.jackets h2 {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+footer h4 {
+  text-align: center;
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: auto;
+  }
+
+  .head {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .first, .last-section {
+    flex-direction: row;
+    gap: 12px;
+    margin: 10px 0;
+    align-items: center;
+  }
+
+  .first li a{
+    font-size: 10px;
+    gap: 20px;
+  }
+
+  .search-bar {
+    width: 80%;
+    font-size: 14px;
+  }
+
+  main {
+    margin: 50px 20px 0 20px;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .btn {
+    font-size: 14px;
+    margin: 20px;
+    padding: 8px 16px;
+  }
+
+  .images {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .images img, .item img {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .click {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .click button {
+    width: 80%;
+    margin: 10px 0;
+  }
+
+   main, .tshirt-header, .trousers, .jackets {
+    padding: 10px;
+  }
+
+  .tshirt-header h2, .trousers h2, .jackets h2 {
+    font-size: 24px;
+    padding-top: 15px;
+  }
+
+   .images img, 
+  .item img {
+    max-width: 100%;
+    width: 200px;
+    height: 250px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  footer h4 {
+    font-size: 24px;
+  }
+}
+
+/* Phones (max-width: 480px) */
+@media (max-width: 480px) {
+   .container {
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    min-height: auto;
+  }
+
+  .search-bar {
+    width: 90%;
+    font-size: 13px;
+  }
+
+  main {
+    font-size: 18px;
+    margin: 30px 10px 0 10px;
+  }
+
+  .btn {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+
+  .first li a {
+    font-size: 10px;
+    gap: 20px;
+  }
+
+  .click button {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .tshirt-header h2, .trousers h2, .jackets h2 {
+    font-size: 22px;
+  }
+
+  footer h4 {
+    font-size: 20px;
+  }
+}
+
+
